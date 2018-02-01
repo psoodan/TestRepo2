@@ -18,7 +18,7 @@ public class Class1 {
 	
 	@Test
 	void testMethod1(){
-		System.setProperty("webdriver.gecko.driver", "C:/Users/msharma13/workspace/JenkinsTest/Drivers/geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/psoodan/git/TestRepo/Drivers/chromedriver.exe");
 		
 		report = new ExtentReports("C:/Users/msharma13/workspace/JenkinsTest/Reports/ExtentReport.html",true);
 		logger = report.startTest("Test Started", "First Test Case started to run");
