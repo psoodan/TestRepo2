@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
@@ -24,7 +25,7 @@ public class DownloadReport {
 				
 				report = new ExtentReports(System.getProperty("user.dir") +"/test-output/STMExtentReport.html", false);
 				logger = report.startTest("Test has been started");
-				System.setProperty("webdriver.chrome.driver", "D:/Drivers/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "C:/Users/msharma13/git/TestRepo/Drivers/chromedriver.exe");
 				driver = new ChromeDriver();
 				logger.log(LogStatus.INFO, "Chrome browser open");
 				driver.get("https://ddakshi:Mpower@123@20.149.4.228/access/prd2/index.pl");  //http://username:password@url
