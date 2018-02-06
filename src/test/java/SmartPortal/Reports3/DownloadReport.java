@@ -1,4 +1,4 @@
-package SmartPortal.Reports;
+package SmartPortal.Reports3;
 
 import java.util.List;
 import java.util.Set;
@@ -35,7 +35,7 @@ public class DownloadReport {
 		        driver.findElement(By.xpath("//*[@id='Menu2']/li[1]/ul/li[1]/a/span[2]")).click();
 		        driver.findElement(By.xpath("//*[@id='Menu2']/li[1]/ul/li[1]/ul/li[1]/a/span")).click();
 		        Select AccountName = new Select(driver.findElement(By.xpath("html/body/table[1]/tbody/tr[3]/td/table/tbody/tr[1]/td[3]/select")));
-		        AccountName.selectByVisibleText("Green Cargo (GCO)");
+		        AccountName.selectByVisibleText("CPA (CPA)");
 		        driver.findElement(By.xpath(".//*[@id='button']")).click();
 		        Select View = new Select(driver.findElement(By.xpath(".//*[@name='reportview']")));
 		        View.selectByVisibleText("Historical Events");
