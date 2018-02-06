@@ -1,4 +1,4 @@
-package SmartPortal.Reports3;
+package SmartPortal.Report3;
 
 import java.util.List;
 import java.util.Set;
